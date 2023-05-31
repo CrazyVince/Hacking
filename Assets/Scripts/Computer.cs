@@ -8,13 +8,15 @@ public class Computer : MonoBehaviour
 {
     public int maxLetters;
     public float maxTime;
+    public bool needHack;
+    public bool hacked;
     public FirstPersonLook mouseLook;
     public FirstPersonMovement movement;
     public GameObject screen;
     public TextMeshProUGUI letterText;
     public TextMeshProUGUI quicklyText;
     public TextMeshProUGUI timerText;
-    public Hack hack;
+    public Interact interact;
 
     bool hacking = false;
     int lettersLeft;
@@ -34,6 +36,8 @@ public class Computer : MonoBehaviour
                     quicklyText.text = "SUCCESS";
                     hacking = false;
                     letterText.text = "";
+                    hacked = true;
+                    needHack = false;
                     Invoke(nameof(FinishHacking), 1);
                 }
             }
@@ -52,15 +56,15 @@ public class Computer : MonoBehaviour
                 Invoke(nameof(FinishHacking), 1);
             }
         }
-
-        
     }
 
     public void StartHacking()
     {
+        if (!needHack) return;
+
         mouseLook.enabled = false;
         movement.enabled = false;
-        hack.enabled = false;
+        interact.enableHack = false;
         screen.SetActive(true);
 
         hacking = true;
@@ -77,8 +81,8 @@ public class Computer : MonoBehaviour
     {
         mouseLook.enabled = true;
         movement.enabled = true;
-        hack.enabled = true;
-
+        interact.enableHack = true;
+        
         screen.SetActive(false);
     }
 }

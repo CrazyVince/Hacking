@@ -116,6 +116,7 @@
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/DOTween/DOTween.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.DiagnosticsModule.dll"
@@ -345,6 +346,14 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/DOTween/Modules/DOTweenModuleAudio.cs"
+"Assets/DOTween/Modules/DOTweenModuleEPOOutline.cs"
+"Assets/DOTween/Modules/DOTweenModulePhysics.cs"
+"Assets/DOTween/Modules/DOTweenModulePhysics2D.cs"
+"Assets/DOTween/Modules/DOTweenModuleSprite.cs"
+"Assets/DOTween/Modules/DOTweenModuleUI.cs"
+"Assets/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+"Assets/DOTween/Modules/DOTweenModuleUtils.cs"
 "Assets/Mini First Person Controller/Scripts/Components/Crouch.cs"
 "Assets/Mini First Person Controller/Scripts/Components/FirstPersonAudio.cs"
 "Assets/Mini First Person Controller/Scripts/Components/GroundCheck.cs"
@@ -353,7 +362,12 @@
 "Assets/Mini First Person Controller/Scripts/FirstPersonLook.cs"
 "Assets/Mini First Person Controller/Scripts/FirstPersonMovement.cs"
 "Assets/Scripts/Computer.cs"
-"Assets/Scripts/Hack.cs"
+"Assets/Scripts/Door.cs"
+"Assets/Scripts/Interact.cs"
+"Assets/Scripts/LevelManager.cs"
+"Assets/Scripts/Phone.cs"
+"Assets/Scripts/Pipe.cs"
+"Assets/Scripts/Stress.cs"
 -langversion:9.0
 
 /deterministic
